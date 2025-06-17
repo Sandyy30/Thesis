@@ -11,7 +11,7 @@ parser.add_argument('--batch_size', default=6, type=int, help="use for training 
 parser.add_argument('--val_batch_size', default=16, type=int, help="use for validation duration per worker")
 parser.add_argument('--test_batch_size', default=16, type=int, help="use for testing duration per worker")
 parser.add_argument('--prefetch_factor', default=4, type=int, help="use for training duration per worker")
-parser.add_argument('--num_workers', default=8, type=int, help="Cpu num for dataloaders")
+parser.add_argument('--num_workers', default=4, type=int, help="Cpu num for dataloaders")
 
 # ========================= Model Settings ============================
 parser.add_argument('--vision_model', default='microsoft/swin-base-patch4-window7-224', type=str, help="vision model to use")
