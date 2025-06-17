@@ -1,6 +1,6 @@
 peft
 tensorboardX
-transformers
+transformers>=4.39.0
 lightning
 Pillow
 numpy
