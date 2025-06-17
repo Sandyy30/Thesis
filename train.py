@@ -6,7 +6,7 @@ from lightning_tools.callbacks import add_callbacks
 from models.R2GenGPT import R2GenGPT
 from lightning.pytorch import seed_everything
 import lightning.pytorch as pl
-
+import torch
  
 def train(args):
     dm = DataModule(args)
