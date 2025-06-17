@@ -108,7 +108,7 @@ class R2GenGPT(pl.LightningModule):
         scorers = [
             (Bleu(4), ["Bleu_1", "Bleu_2", "Bleu_3", "Bleu_4"]),
             (Rouge(), "ROUGE_L"),
-            (Meteor(), "METEOR"),
+            #(Meteor(), "METEOR"),
             (Cider(), "CIDEr")
         ]
         final_scores = {}
