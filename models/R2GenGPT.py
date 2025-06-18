@@ -30,7 +30,7 @@ class R2GenGPT(pl.LightningModule):
             peft_config_visual = LoraConfig(
                                     r=args.vis_r,
                                     lora_alpha=args.vis_alpha,
-                                    target_modules=["q_proj", "v_proj"],
+                                    target_modules=["query", "value"],
                                     lora_dropout=args.lora_dropout,
                                     bias="none",
                                     modules_to_save=["classifier"],
