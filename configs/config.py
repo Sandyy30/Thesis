@@ -36,7 +36,7 @@ parser.add_argument('--weights', type=list, default=[0.5, 0.5])
 parser.add_argument('--scorer_types', type=list, default=['Bleu_4', 'CIDEr'])
 
 # ========================= Learning Configs ==========================
-parser.add_argument('--learning_rate', default=1e-5, type=float, help='initial learning rate')
+parser.add_argument('--learning_rate', default=1e-4, type=float, help='initial learning rate')
 parser.add_argument('--gradient_clip_val', default=None, type=int, help='gradient clip value')
 
 # ========================= Decoding Settings ==========================
